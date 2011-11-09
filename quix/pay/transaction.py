@@ -56,8 +56,16 @@ class Address(object):
 class Check(object):
     """
     Electronic check information used in a payment gateway transaction.
+
+    account_type can be 'S' for savings or 'C' for checking
+    entry_class_code is ARC, CCD, CIE, CTX, POP, POS, PPD, RCK, TEL, or WEB
     """
-    pass
+    def __init__(self, routing_number, account_number, account_type='S', check_number=None, entry_class_code=None):
+        self.routing_number = routing_number
+        self.account_number = account_number
+        self.account_type = account_type
+        self.check_number = check_number
+        self.entry_class_code = entry_class_code
     
 class CreditCard(object):
     """

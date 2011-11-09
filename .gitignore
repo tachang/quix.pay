@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+.DS_Store
+*.so
+*.o
+*.orig
+*.tmp
+*~
+.hg
+.hgignore
+
