@@ -1,3 +1,4 @@
+.*
 *.pyc
 *.pyo
 .DS_Store
@@ -6,6 +7,4 @@
 *.orig
 *.tmp
 *~
-.hg
-.hgignore
-
+!.gitignore
